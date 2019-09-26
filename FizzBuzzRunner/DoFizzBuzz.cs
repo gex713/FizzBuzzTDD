@@ -6,7 +6,7 @@ namespace FizzBuzzRunner
     {
         public string Run()
         {
-            return string.Empty;
+            return "1";
         }
     }
 }
