@@ -16,5 +16,15 @@ namespace FizzBuzzTests
 
             answer.Should().Be("1");
         }
+
+        [Fact]
+        public void TwoShouldBeReturned()
+        {
+            var runner = new DoFizzBuzz();
+
+            var answer = runner.Run();
+
+            answer.Should().Be("2");
+        }
     }
 }
