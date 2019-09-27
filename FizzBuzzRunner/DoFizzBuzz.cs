@@ -11,11 +11,14 @@ namespace FizzBuzzRunner
 
         public string GetFizzBuzz(int num)
         {
-            if (num == 15) return "FizzBuzz";
-            if (num % 5 == 0) return "Buzz";
-            if (num % 3 == 0) return "Fizz";
+            string result = string.Empty;
+            
+            if (num % 3 == 0) result += "Fizz";
+            if (num % 5 == 0) result += "Buzz";
 
-            return num.ToString();
+            if (num % 3 != 0 && num % 5 != 0) result = num.ToString();
+
+            return result;
         }
     }
 }
