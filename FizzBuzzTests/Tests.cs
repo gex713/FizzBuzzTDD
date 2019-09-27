@@ -36,6 +36,11 @@ namespace FizzBuzzTests
         [InlineData(8, "8")]
         [InlineData(9, "Fizz")]
         [InlineData(10, "Buzz")]
+        [InlineData(11, "11")]
+        [InlineData(12, "Fizz")]
+        [InlineData(13, "13")]
+        [InlineData(14, "14")]
+        [InlineData(15, "FizzBuzz")]
         public void FizzBuzzShouldWork(int num, string expected)
         {
             var runner = new DoFizzBuzz();
