@@ -29,6 +29,7 @@ namespace FizzBuzzTests
 
         [Theory]
         [InlineData(3, "Fizz")]
+        [InlineData(4, "4")]
         public void FizzBuzzShouldWork(int num, string expected)
         {
             var runner = new DoFizzBuzz();
