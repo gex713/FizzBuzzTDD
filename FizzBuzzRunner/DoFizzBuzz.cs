@@ -11,8 +11,7 @@ namespace FizzBuzzRunner
 
         public string GetFizzBuzz(int num)
         {
-            if (num == 10) return "Buzz";
-            if (num == 5) return "Buzz";
+            if (num % 5 == 0) return "Buzz";
             if (num % 3 == 0) return "Fizz";
 
             return num.ToString();
