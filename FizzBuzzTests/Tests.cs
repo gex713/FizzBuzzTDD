@@ -26,5 +26,16 @@ namespace FizzBuzzTests
 
             answer.Should().Be("2");
         }
+
+        [Theory]
+        [InlineData(3, "Fizz")]
+        public void FizzBuzzShouldWork(int num, string expected)
+        {
+            var runner = new DoFizzBuzz();
+
+            var answer = runner.GetFizzBuzz(num);
+
+            answer.Should().Be(expected);
+        }
     }
 }
