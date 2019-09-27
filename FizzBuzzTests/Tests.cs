@@ -12,7 +12,7 @@ namespace FizzBuzzTests
         {
             var runner = new DoFizzBuzz();
 
-            var answer = runner.Run();
+            var answer = runner.GetFizzBuzz(1);
 
             answer.Should().Be("1");
         }
@@ -22,7 +22,7 @@ namespace FizzBuzzTests
         {
             var runner = new DoFizzBuzz();
 
-            var answer = runner.Run();
+            var answer = runner.GetFizzBuzz(2);
 
             answer.Should().Be("2");
         }
